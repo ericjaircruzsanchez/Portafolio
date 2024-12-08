@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codificador</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class=" bg-slate-200">
+    <header class=" bg-blue-600 py-8 max-h-72">
+        <h1 class=" uppercase text-center font-black text-4xl text-white">
+            Codificador de mensajes
+        </h1>
+    </header>
+    <div class=" flex flex-row w-full justify-center laptop:flex-row mobile:flex-col mb-10" id="contenedor-principal">
+        <div class=" contenedores-cod max-w-3xl sm:mx-auto mobile:mx-5 sm:w-full">
+            <div class=" bg-white shadow-lg rounded-lg mt-10 p-5 ">
+                <form class=" space-y-5" id="form-codificar">
+                    <div class="flex flex-col space-y-5">
+                        <p class=" text-4xl text-blue-600 font-bold text-center">Digite el texto a codificar</p>
+                    <input 
+                        class="w-full bg-white border border-gray-200 p-2" 
+                        type="text" 
+                        name="" 
+                        id="text-codificar"
+                    >
+                    <input 
+                        class="uppercase bg-blue-600 hover:bg-blue-700 cursor-pointer w-full p-2 text-white font-black" 
+                        type="submit" 
+                        value="Codificar texto"
+                        id="btn-codificar"
+                    >
+                    </div>
+                </form>
+            </div>
+            <div id="contenedor-encriptado">
+                <!-- Mensaje encriptado -->
+                
+            </div>
+        </div>
+        <div class="contenedores-cod max-w-3xl sm:mx-auto mobile:mx-5 sm:w-full">
+            <div class=" bg-white shadow-lg rounded-lg mt-10 p-5 ">
+                <form class=" space-y-5" id="form-descodificar">
+                    <div class="flex flex-col space-y-5">
+                        <p class=" text-4xl text-blue-600 font-bold text-center">Digite el texto a descodificar</p>
+                    <input 
+                        class="w-full bg-white border border-gray-200 p-2" 
+                        type="text" 
+                        name="" 
+                        id="text-descodificar"
+                    >
+                    <input 
+                        class="uppercase bg-blue-600 hover:bg-blue-700 cursor-pointer w-full p-2 text-white font-black" 
+                        type="submit" 
+                        value="Codificar texto"
+                        id="btn-descodificar"
+                    >
+                    </div>
+                </form>
+            </div>
+            <div id="contenedor-desencriptado">
+                <!-- Mensaje encriptado -->
+                
+            </div>
+        </div>
+    </div>
+    <script src="./codificador.js"></script>
+</body>
+</html>

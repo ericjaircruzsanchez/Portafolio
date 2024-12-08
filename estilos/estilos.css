@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaeaea;
+}
+
+.contenedor-principal-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-menu{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-nav ul li, .Nombre{
+    display: block;
+    float: left;
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: 550;
+}
+
+ul > li{
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #111111;
+}
+
+.contenedor-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-section{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.contenedor-personal .contenedor-informacion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.contenedor-informacion{
+    height: 230px;
+}
+
+.descripcion-personal{
+    width: 50%;
+    height: 100%;
+}
+
+.text-profesion{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.descripcion{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.iconos{
+    font-size: 38px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+/*Contenedor proyectos*/
+.contenedor-trabajos{
+    width: 90%;
+    height: 550px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.texto-trabajos, .texto-personal{
+    width: 100%;
+    font-size: 45px;
+    font-weight: 800;
+    padding-bottom: 75px;
+}
+
+.contenedor-principal-tarjetas{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+}
+
+.contenedor-tarjetas{
+    width: 33%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    padding: 9px;
+    border-radius: 10px;
+}
+
+.imagen-tarjeta{
+    width: 100%;
+    overflow: hidden;
+    transition: all 500ms ease;
+}
+
+.imagen-tarjeta img{
+    border-radius: 10px;
+    width: 100%;
+    transition: all 300ms ease;
+}
+
+.imagen-tarjeta img:hover{
+    transform: scale(1.15);
+}
+
+
+.descripcion-proyecto, .titulo-descripcion-proyecto, .imagen-tarjeta, .contenedor-tarjetas, .link-proyecto{
+    background-color: rgb(228, 225, 225);
+}
+
+
+
+/*Sobre mi*/
+.contenedor-personal{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.texto{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.contenedor-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-img img{
+    width: 210px;
+    height: 210px;
+}
+
+/*Contacto*/
+footer{
+    width: 100%;
+    margin: 75px 0px 75px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-contacto{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-iconos-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-contactame{
+    width: 100%;
+    font-size: 45px;
+    font-weight: 800;
+    padding-bottom: 75px;
+}
+
+@media screen and (max-width: 900px){
+    .contenedor-section {
+        height: 300px;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .texto-trabajos{
+        padding-bottom: 40px;
+    }
+    .contenedor-trabajos{
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .contenedor-principal-tarjetas{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .contenedor-tarjetas{
+        width: 100%;
+    }
+    .contenedor-descripcion-proyecto{
+        width: 100%;
+        background-color: rgb(228, 225, 225);
+        padding: 10px;
+    }
+    .text-profesion, .texto-trabajos, .texto-personal, .texto-contactame{
+        font-size: 23px;
+    }
+    .texto-personal{
+        padding-bottom: 30px;
+    }
+    .descripcion{
+        font-size: 18px;
+    }
+    .texto{
+        width: 100%;
+        font-size: 18px;
+    }
+    .texto-contactame{
+        padding-bottom: 25px;
+    }
+    .contenedor-informacion{
+        height: 180px;
+    }
+    .Nombre, .contenedor-nav > ul > li{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor-img{
+        display: none;
+    }
+    .descripcion-personal{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h1{
+        font-size: 25px;
+        font-weight: 800;
+    }
+    .contenedor-section{
+        height: 200px;
+        margin-top: 25px;
+        justify-content: start;
+    }
+    .contenedor-nav ul li, .Nombre{
+        font-size: 17px;
+    }
+    .text-profesion, .texto-trabajos, .texto-personal, .texto-contactame, .descripcion, .texto{
+        font-size: 17px;
+    }
+    .texto{
+        width: 100%;
+        
+    }
+    footer{
+        margin-top: 30px;
+    }
+    .texto-trabajos{
+        padding-bottom: 30px;
+    }
+    .iconos {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .text-profesion, .texto-nombre, .descripcion {
+        padding-bottom: 10px;
+    }
+    .contenedor-menu{
+        width: 98%;
+        flex-direction: column;
+        align-items: start;
+    }
+    ul > li{
+        padding-right: 5px;
+    }
+    .contenedor-nav ul li{
+        font-size: 15px;
+    }
+    .contenedor-principal-header {
+        width: 100%;
+        justify-content: center;
+    }
+    .text-profesion, .texto-trabajos, .texto-personal, .texto-contactame, .descripcion, .texto{
+        font-size: 15px;
+    }
+    .Nombre{
+        display: none;
+    }
+    /* .contenedor-main{
+        margin-top: 10px;
+        padding-top: 10px;
+    } */
+    .contenedor-section{
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .texto-trabajos, .texto-personal, .texto-contactame{
+        padding-bottom: 10px;
+    }
+    .contenedor-trabajos, .contenedor-principal-tarjetas{
+        margin-bottom:  10px;
+    }
+    footer{
+        margin-top: 18px;
+        margin-bottom: 20px;
+    }
+    .iconos{
+        font-size: 25px;
+    }
+    
+}

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contenedores-cod{
+    max-width: 550px;
+    width: 550px;
+}
+
+@media screen and (max-width: 1149px){
+    .contenedores-cod{
+        max-width: 90%;
+        margin: auto;
+    }
+}

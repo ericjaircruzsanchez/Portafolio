@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Me perdonas?</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script>
+        function accion() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            newWidth = (Math.random() * width * .75);
+            newHeight = (Math.random() * height * .75);
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="contenedor_principal">
+        <div class="contenedor_pregunta">
+            <span class="pregunta">¿Me perdonas?</span>
+        </div>
+        <div class="contenedor_botones">
+            <a href="./maquetacion/perdonado.html"><input class="boton" type="button" onclick="accion()" id="btnSi" value="Si" /></a>
+            <input class="boton" type="button" id="btnNo" onmouseover="accion()" value="No" />
+        </div>
+        <div class="contenedor_img">
+            <img class="img-rem" src="./img/btschibi.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
