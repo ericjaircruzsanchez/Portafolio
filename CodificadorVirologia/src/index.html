@@ -12,9 +12,9 @@
             Codificador de mensajes
         </h1>
     </header>
-    <div class=" flex flex-row w-full justify-center laptop:flex-row mobile:flex-col mb-10" id="contenedor-principal">
-        <div class=" contenedores-cod max-w-3xl sm:mx-auto mobile:mx-5 sm:w-full">
-            <div class=" bg-white shadow-lg rounded-lg mt-10 p-5 ">
+    <div class=" flex flex-row w-full justify-center gap-20 laptop:flex-row mobile:flex-col mb-10" id="contenedor-principal">
+        <div class=" contenedores-cod max-w-3xl mobile:mx-5 sm:w-full">
+            <div class=" bg-white shadow-lg rounded-lg mt-10 p-5">
                 <form class=" space-y-5" id="form-codificar">
                     <div class="flex flex-col space-y-5">
                         <p class=" text-4xl text-blue-600 font-bold text-center">Digite el texto a codificar</p>
@@ -24,6 +24,9 @@
                         name="" 
                         id="text-codificar"
                     >
+                    <div class="flex w-full contenedor-verificacion-encriptacion">
+                        <span class=" bg-red-600 w-full text-center text-white font-bold text-lg">Digite al menos un caracter</span>
+                    </div>
                     <input 
                         class="uppercase bg-blue-600 hover:bg-blue-700 cursor-pointer w-full p-2 text-white font-black" 
                         type="submit" 
@@ -38,7 +41,7 @@
                 
             </div>
         </div>
-        <div class="contenedores-cod max-w-3xl sm:mx-auto mobile:mx-5 sm:w-full">
+        <div class="contenedores-cod max-w-3xl mobile:mx-5 sm:w-full">
             <div class=" bg-white shadow-lg rounded-lg mt-10 p-5 ">
                 <form class=" space-y-5" id="form-descodificar">
                     <div class="flex flex-col space-y-5">
@@ -49,17 +52,20 @@
                         name="" 
                         id="text-descodificar"
                     >
+                    <div class="flex w-full contenedor-verificacion-desencriptacion">
+                        <span class="bg-red-600 w-full text-center text-white font-bold text-lg">Digite al menos un caracter</span>
+                    </div>
                     <input 
                         class="uppercase bg-blue-600 hover:bg-blue-700 cursor-pointer w-full p-2 text-white font-black" 
                         type="submit" 
-                        value="Codificar texto"
+                        value="Descodificar texto"
                         id="btn-descodificar"
                     >
                     </div>
                 </form>
             </div>
             <div id="contenedor-desencriptado">
-                <!-- Mensaje encriptado -->
+                <!-- Mensaje desencriptado -->
                 
             </div>
         </div>

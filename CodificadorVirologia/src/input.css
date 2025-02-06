@@ -2,14 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    box-sizing: border-box;
+}
+
 .contenedores-cod{
     max-width: 550px;
     width: 550px;
+    min-width: auto;
+}
+
+.contenedor-verificacion-encriptacion, .contenedor-verificacion-desencriptacion{
+    display: none;
+}
+
+.contenedor-verificacion-encriptacion--active, .contenedor-verificacion-desencriptacion--active{
+    display: flex;
 }
 
 @media screen and (max-width: 1149px){
     .contenedores-cod{
-        max-width: 90%;
-        margin: auto;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0px !important;
+    }
+    .contenedores-cod > div{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #contenedor-principal{
+        gap: 0rem;
     }
 }
